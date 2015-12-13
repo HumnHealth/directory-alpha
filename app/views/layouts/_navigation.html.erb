@@ -6,26 +6,24 @@
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
                             <span class="block m-t-xs">
-                                <strong class="font-bold">Example user</strong>
-                            </span> <span class="text-muted text-xs block">Example menu <b class="caret"></b></span>
+                                <strong class="font-bold"><%= image_tag("logo.png", width:'100%', class: 'img-responsive') %></strong>
+                            </span>
                         </span>
                     </a>
-                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="#">Logout</a></li>
-                    </ul>
                 </div>
+                <!-- <a class="navbar-minimalize" href="#"></a> -->
                 <div class="logo-element">
-                    IN+
+                    HH
                 </div>
             </li>
             <li class="<%= 'active' if current_page?('/') %>">
                 <%= link_to "/" do %>
-                <i class="fa fa-laptop"></i> <span class="nav-label">Main page</span>
+                <i class="fa fa-user-md"></i> <span class="nav-label">Find A Doctor</span>
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/home/minor') %>">
                 <%= link_to "/home/minor" do %>
-                <i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span>
+                <i class="fa fa-video-camera"></i> <span class="nav-label">Video Consult a Doctor</span>
                 <% end %>
             </li>
         </ul>
