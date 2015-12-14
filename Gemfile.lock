@@ -67,6 +67,8 @@ GEM
     mail_form (1.5.1)
       actionmailer (>= 3.2, < 5)
       activemodel (>= 3.2, < 5)
+    meta-tags (2.1.0)
+      actionpack (>= 3.0.0)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.11.2)
@@ -158,6 +160,7 @@ DEPENDENCIES
   foreman
   jbuilder (~> 1.2)
   mail_form
+  meta-tags
   opentok (~> 2.3)
   paperclip (~> 4.1.1)
   pg
