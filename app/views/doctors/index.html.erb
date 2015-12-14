@@ -16,20 +16,20 @@
     <% for doctor in @doctors %>
         <div class="col-lg-4">
             <div class="contact-box">
-                <a href="<%= url_for :controller => 'appviews', :action => 'profile' %>">
+                <a href="<%= doctor_path(doctor) %>">
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <img alt="image" class="img-circle m-t-xs img-responsive" src="<%= image_path('a2.jpg') %>">
-                        <div class="m-t-xs font-bold"><%= doctor.type %></div>
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="<%= image_path doctor.image  %>">
+                        <div class="m-t-xs font-bold"><%= doctor.speciality %></div>
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <h3><strong><%= doctor.name %></strong></h3>
-                    <p><i class="fa fa-map-marker"></i> <%= doctor.address.postal %></p>
+                    <h3><strong>Dr. <%= doctor.name %></strong></h3>
+                    <p><i class="fa fa-map-marker"></i> <%= doctor.practice.postal %></p>
                     <address>
-                        <strong><%= doctor.address.name %></strong><br>
-                        <%= doctor.address.street %><br>
-                        <%= doctor.address.city +","+doctor.address.postal %><br>
+                        <strong><%= doctor.practice.name %></strong><br>
+                        <%= doctor.practice.street %><br>
+                        <%= doctor.practice.city+", "+doctor.practice.postal %><br>
                         <abbr title="Phone">P:</abbr> <%= doctor.phone %>
                     </address>
                 </div>
