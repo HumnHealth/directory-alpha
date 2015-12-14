@@ -28,7 +28,7 @@
             <div class="ibox-content border-left-right">
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <img alt="image" class="img-circle m-t-xs img-responsive" src="<%= image_path @doctor.image  %>">
+                        <%= image_tag @doctor.image, class: 'img-circle m-t-xs img-responsive' %>
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -49,7 +49,7 @@
             </div>
             <div class="ibox-content">
                 <h2><%= @doctor.practice.name %></h2><br>
-                    <img alt="image" class="m-t-xs img-responsive" width="60%" src="<%= image_path @doctor.practice.image  %>">
+                    <%= image_tag @doctor.practice.image, width:'60%', class: 'm-t-xs img-responsive' %>
                 <address><i class="fa fa-map-marker"></i>
                     <%= @doctor.practice.street %><br>
                     <%= @doctor.practice.city+", "+@doctor.practice.postal %><br>
