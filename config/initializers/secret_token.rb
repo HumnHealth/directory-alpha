@@ -1,1 +1,1 @@
-DirectoryAlpha::Application.config.secret_token = ENV['SECRET_TOKEN']
+DirectoryAlpha::Application.config.secret_token = '1e58b874a7e42ebde99fadd584ca9c3c58661510db6e8a8f74db33987f00df940ab2d8eeb5e89112926afcfd5adbbed4d7582bd24033c39f2c5984c3a85a5a54'
