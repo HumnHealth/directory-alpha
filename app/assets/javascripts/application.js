@@ -13,6 +13,7 @@
 //= require jquery/jquery-2.1.1.js
 //= require bootstrap-sprockets
 //= require metisMenu/jquery.metisMenu.js
+//= require wow/wow.min.js
 //= require pace/pace.min.js
 //= require slimscroll/jquery.slimscroll.min.js
 //= require_tree .
