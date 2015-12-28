@@ -4,16 +4,13 @@ class LandingsController < ApplicationController
   def index
   end
 
-  def team
-  end
-
-  def carehomes
+  def carehome
   end
 
   def motherbaby
   end
 
-  def doctors
+  def doctordirectory
   end
 
   private
