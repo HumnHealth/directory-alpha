@@ -1,0 +1,296 @@
+<div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<%= url_for :controller => 'landings', :action => 'index' %>">HumanHealth</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<%= url_for root_path %>">Home</a></li>
+                    <li class="active"><a href="<%= url_for carehome_path %>">Care Homes</a></li>
+                    <li><a href="<%= url_for motherbaby_path %>">Mother & Baby</a></li>
+                    <li><a href="<%= url_for doctordirectory_path %>">My Doctor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Care Homes</h1>
+                    <p>The Human Health Solution</p>
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+        </div>
+    </div>
+</div>
+
+<section class="container services">
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line" style="margin-top:0;"></div>
+        <h1>We use a combination of people and technology to swiftly match <span class="navy">the right health worker with the right patient</span> in residential, nursing and specialist home settings.</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3 text-center wow fadeInLeft">
+        <div>
+            <i class="fa fa-gbp features-icon"></i>
+            <h2>Lower Costs</h2>
+            <p>A huge reduction in avoidable and unkind admissions and vastly diminished costs to the healthcare system.</p>
+        </div>
+        <div class="m-t-lg">
+            <i class="fa fa-hospital-o features-icon"></i>
+            <h2>Affordable Solution</h2>
+            <p>A complex system which used to take weeks and cost thousand of pounds instead takes a few hours and costs a few hundred pounds.</p>
+        </div>
+    </div>
+    <div class="col-md-6 text-center  wow zoomIn">
+        <img src="<%= image_path('carehome.png') %>" alt="phone" class="img-responsive" style="margin-left:15%; margin-top:10px;" width="70%">
+    </div>
+    <div class="col-md-3 text-center wow fadeInRight">
+        <div>
+            <i class="fa fa-user-md features-icon"></i>
+            <h2>Quick & Convenient</h2>
+            <p>A revolution in the speed of referral for specialist care</p>
+        </div>
+        <div class="m-t-lg">
+            <i class="fa fa-heart features-icon"></i>
+            <h2>Family Engagement</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+<section id="team" class="gray-section testimonials">
+<div class="container">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center" style="color:white;">
+            <h1>Who Are We?</h1>
+            <h2>HumanHealth is a group of professionals who specialise in tackling complex problems in healthcare. Our experience ranges from frontline GP services to technology implementation within the NHS, and we use our understanding of a caring but strained system to improve quality of care for patients.</h2><h2>We believe that technology is the first step to building a caring system that allows patients and carers to rapidly access the clinical support they require, at the same time as cutting the distances between doctors and patients. Elegant technology surrounds patients in their daily lives outside of a healthcare setting so we combine technological advances with agile business management and implementation.</h2>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+<section class="gray-section" style="margin-top: 0; padding-top: 20px">
+    <div class="container">
+        <div class="row">
+            <div class="navy-line"></div>
+            <div class="col-lg-12 text-center wow zoomIn">
+                <h1>
+                    Problem We Solve
+                </h1>
+                <h4>Care homes and A&E admissions often feature in national news headlines but what is all the fuss?</h4>
+                <p>
+                The scale of this problem is difficult to comprehend. Emergency admissions from care homes cost the NHS a staggering £1.25Bn/year and 25% are estimated to be avoidable. Individuals in care homes often have complex care needs and the pathway to better care needs to tackle these complex issues while being simple for patients and clinical staff.
+
+                <br><br>It seems intuitive that older patients account for a high proportion of emergency admissions (~40% are for the over 65s and ~10% for the over 85s); however, there are ways to reduce these admissions. One straightforward way to reduce admissions is to increase funding and staff to manage and deliver clinical services. Unfortunately, the healthcare budget is already strained. Cutting care is an unattractive alternative. Perhaps the greatest hope comes from transformation, delivering better care for the same or reduced funding.
+
+                <br><br>The NHS has many high-quality individuals who can offer world-class care. As with all major organisations, some services are going to be disjointed. Slow communication between various services can lead to patients being left uninformed and in hospital unnecessarily. Therefore, a shift to rapid communication between patients, relatives, clinicians, and care home staff represents a significant opportunity to improve the quality of care residents receive and make delivering that care more rewarding whilst also reducing costs.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin:40px 0px;">
+            <div class="col-sm-5 col-sm-offset-1">
+                <%= image_tag "nhs_logo2.png", width: "100%" %>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+                <%= image_tag "oxford_logo.png", width: "60%" %>
+            </div>
+    </div>
+</section>
+
+<section class="comments navy-section" style="margin-top: 0">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>What our patients & partners say</h1>
+            <p>We serve patients through online consultations, help doctors grow their practices, and allow care homes to better serve their residents.</p>
+        </div>
+    </div>
+    <div class="row features-block wow fadeInUp">
+        <div class="col-lg-4">
+            <div class="bubble" style="color: black;">
+                "I've been able to increase my register by almost 25% using HumanHealth and I can reach more patients, more quickly..."
+            </div>
+            <div class="comments-avatar">
+                <a href="" class="pull-left">
+                    <img alt="image" src="<%= image_path('avatar3.jpg') %>">
+                </a>
+                <div class="media-body">
+                    <div class="commens-name">
+                        Dr. Jeremy Dexter
+                    </div>
+                    <small class="text-muted">GP at Beumont Street Practice</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="bubble" style="color: black;">
+                "We've loved working with Human Health. They're system is fast, simple..."
+            </div>
+            <div class="comments-avatar">
+                <a href="" class="pull-left">
+                    <img alt="image" src="<%= image_path('avatar4.jpg') %>">
+                </a>
+                <div class="media-body">
+                    <div class="commens-name">
+                        Andrew Williams
+                    </div>
+                    <small class="text-muted">Director at Oxford Care Homes</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="bubble" style="color: black;">
+                "I loved how I didn't have to miss work to see my doctor..."
+            </div>
+            <div class="comments-avatar">
+                <a href="" class="pull-left">
+                    <img alt="image" src="<%= image_path('avatar2.jpg') %>">
+                </a>
+                <div class="media-body">
+                    <div class="commens-name">
+                        Micha Woods
+                    </div>
+                    <small class="text-muted">Business Consultant from London</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="contact" class="gray-section contact" style="margin-top:0;">
+<div class="container">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Contact Us</h1>
+            <p>We'd love to tell you more about Human Health and answer any of your questions.</p>
+        </div>
+    </div>
+    <div class="row m-b-lg">
+        <div class="col-lg-3 col-lg-offset-3">
+            <address>
+                <strong><span class="navy">Human Health</span></strong><br/>
+                43 Woodstock Rd<br/>
+                Oxford, UK OX2 6HG<br/>
+                <abbr title="Phone">P:</abbr> (747) 829-5822
+            </address>
+        </div>
+        <div class="col-lg-4">
+            <p class="text-color">
+                Human Health is a UK-incorporated limited liability company based in Oxford. We are passionate about improving care and reducing costs in the UK healthcare system. We believe technology is one of the key answers.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <a href="mailto:info@humnhealth.com" class="btn btn-primary">Send Us an Email</a>
+            <p class="m-t-sm">
+                Or follow us on social media.
+            </p>
+            <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+            <p><strong>&copy; 2015 Human Health</strong><br/>Optimizing Human Kind</p>
+        </div>
+    </div>
+</div>
+</section>
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(document).ready(function () {
+
+    $('body').addClass('landing-page');
+    $('body').attr('id', 'page-top');
+
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 80
+    });
+
+    // Page scrolling feature
+    $('a.page-scroll').bind('click', function(event) {
+        var link = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(link.attr('href')).offset().top - 50
+        }, 500);
+        event.preventDefault();
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+    new WOW().init();
+});
+
+
+</script>
+
+<% end %>
