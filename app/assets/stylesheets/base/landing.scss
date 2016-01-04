@@ -65,6 +65,14 @@ body.landing-page {
     margin: 60px auto 0;
     border-bottom: 2px solid $navy;
   }
+
+  .white-line {
+    width: 60px;
+    height: 1px;
+    margin: 60px auto 0;
+    border-bottom: 2px solid #fff;
+  }
+
   /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
   .navbar-wrapper {
@@ -379,7 +387,7 @@ body.landing-page {
     width: 88px;
   }
   .pricing-plan {
-    margin: 20px 30px 0 30px;
+    margin: 20px 5px 0 5px;
     border-radius: 4px;
   }
   .pricing-plan.selected {
@@ -409,6 +417,13 @@ body.landing-page {
     font-size: 22px;
     font-weight: 600;
   }
+
+  .solution {
+    background-image: image-url('oldcpu2.png');
+    margin-top: 0;
+    padding:80px;
+  }
+
   .testimonials {
     padding-top: 80px;
     padding-bottom: 90px;
