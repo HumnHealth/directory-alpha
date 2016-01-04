@@ -36,4 +36,22 @@ DirectoryAlpha::Application.configure do
   # config.action_view.raise_on_missing_translations = true
   # For using paperclip in development
   Paperclip.options[:command_path] = "/usr/local/bin/"
+
+  config.action_mailer.smtp_settings = {
+      address: "smtp.connectmed.co",
+      port: 587,
+      domain: "connectmed.co.za",
+      authentication: "plain",
+      user_name: "melissa@connectmed.co.za",
+      password: "Gt544562"
+      }
+
+  # ActionMailer Config
+      config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+      config.action_mailer.delivery_method = :smtp
+      config.action_mailer.raise_delivery_errors = true
+
+  # Send email in development mode?
+      config.action_mailer.perform_deliveries = true
+      config.action_mailer.default :charset => "utf-8"
 end
