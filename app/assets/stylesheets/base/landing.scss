@@ -225,6 +225,7 @@ body.landing-page {
   .carousel-caption {
     z-index: 10;
   }
+
   /* Declare heights because of positioning of img element */
   .carousel .item {
     height: 470px;
@@ -318,6 +319,11 @@ body.landing-page {
   .caption-link:hover {
     text-decoration: none;
     color: inherit;
+  }
+
+ .video-version {
+    top: 200px;
+    left: 35%;
   }
   /* Sections
   ------------------------- */
@@ -548,8 +554,10 @@ body.landing-page {
     background-color: #1dc5a3;
     border-color: #1dc5a3;
   }
+
   /* RESPONSIVE CSS
   -------------------------------------------------- */
+
   @media (min-width: 768px) {
     /* Navbar positioning foo */
     .navbar-wrapper {
@@ -581,12 +589,16 @@ body.landing-page {
     .carousel-image {
       display: none;
     }
+  .carousel-caption,
+    .carousel-caption.blank {
+      left: 25%;
+      top: 175px;
+    }
   }
   @media (max-width: 768px) {
     .carousel-caption,
     .carousel-caption.blank {
-      left: 20%;
-      top: 175px;
+      top: 100px;
     }
     .carousel-caption h1 {
       font-size: 35px;
@@ -640,6 +652,15 @@ body.landing-page {
       display: none;
     }
   }
+
+  @media (max-width: 500px) {
+    .carousel-caption,
+    .carousel-caption.blank {
+      top: 50px;
+      left: 14%;
+    }
+  }
+
   @media (min-width: 992px) {
     .featurette-heading {
       margin-top: 120px;
