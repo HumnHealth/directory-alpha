@@ -1,0 +1,145 @@
+<div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="border-color:#fff">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<%= url_for :controller => 'landings', :action => 'index' %>">HumanHealth</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="/">Home</a></li>
+                    <li class="active"><a href="<%= url_for carehome_path %>">Care Homes</a></li>
+                    <li><a href="<%= url_for motherbaby_path %>">Mother & Baby</a></li>
+                    <li><a href="<%= url_for doctordirectory_path %>">My Doctor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section id="contact" class="dark-gray-section contact" style="margin-top:0;padding-top:50px;height:800px;">
+<div class="container">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1 id="title">We look forward to taking the conversation forward with you.</h1>
+            <p>Please enter your details below.</p>
+        </div>
+    </div>
+    <div class="row m-b-lg">
+        <div class="col-sm-8 col-sm-offset-2 text-center" style="color:#0064b7">
+
+            <%= form_for @contact do |f| %>
+                <div class="form-group">
+                    <%= f.text_field :first_name, :required => true, :class => 'form-control', :placeholder => 'First Name', :type => 'text'  %>
+                </div>
+                <div class="form-group">
+                    <%= f.text_field :last_name, :required => true, :class => 'form-control', :placeholder => 'Last Name', :type => 'text'  %>
+                </div>
+                <div class="form-group">
+                    <%= f.text_field :email, :required => true, :class => 'form-control', :placeholder => 'Email', :type => 'email' %>
+                </div>
+                <div class="form-group">
+                    <%= f.text_field :phone, :class => 'form-control', :placeholder => 'Phone', :type => 'text' %>
+                </div>
+                <div class="form-group">
+                    <%= f.text_area :message, :class => 'form-control', :placeholder => 'Message', :type => 'text' %>
+                </div>
+                <%= f.hidden_field(:context, onchange: "alert('Input collected!')", id: "context") %>
+                <%= f.submit "Send", :class => 'btn btn-primary block full-width m-b' %>
+            <% end %>
+              <% if flash[:error_messages] %>
+                  <% for m in flash[:error_messages] %>
+                    <div class="alert alert-danger alert-dismissable">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <%= m %>
+                    </div>
+                  <% end %>
+              <% end %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+            <p><strong>Human Health &copy; 2015</strong><br/>Optimising Human <strong>Kind</strong></p>
+        </div>
+    </div>
+</div>
+</section>
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(document).ready(function () {
+    // Get Anchore
+    var anchor_value;
+    var stripped_url = document.location.toString().split("#");
+    if (stripped_url.length > 1)
+    anchor_value = stripped_url[1];
+    $('#context').val(anchor_value);
+
+    // Theme Javascript
+    $('body').addClass('landing-page');
+    $('body').attr('id', 'page-top');
+
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 80
+    });
+
+    // Page scrolling feature
+    $('a.page-scroll').bind('click', function(event) {
+        var link = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(link.attr('href')).offset().top - 50
+        }, 500);
+        event.preventDefault();
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+    new WOW().init();
+});
+
+
+</script>
+
+<% end %>

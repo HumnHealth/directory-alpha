@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/doctordirectory', to: "landings#doctordirectory", as: "doctordirectory"
   resources :doctors
   resources :practices
+  resources :contacts
 end
