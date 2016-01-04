@@ -19,20 +19,21 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<%= url_for root_path %>">Home</a></li>
                     <li><a href="<%= url_for carehome_path %>">Care Homes</a></li>
-                    <li class="active" ><a href="<%= url_for motherbaby_path %>">Mother & Baby</a></li>
+                    <li class="active"><a href="<%= url_for motherbaby_path %>">Mother & Baby</a></li>
                     <li><a href="<%= url_for doctordirectory_path %>">My Doctor</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
+
 <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <div class="container">
-                <div class="carousel-caption">
+                <div class="carousel-caption" style="text-align:center">
                     <h1>Human Health</h1>
-                    <p>Optimizing Human Kind</p>
+                    <p>All About Baby and Me</p>
                 </div>
             </div>
             <!-- Set background for slide in css -->
@@ -41,267 +42,166 @@
     </div>
 </div>
 
-<section id="about" class="container services">
-<div class="row text-center wow fadeInDown">
-    <div class="col-sm-3">
-        <h2>Care Homes Systems</h2>
-        <img src="<%= image_path('carehome.png') %>" class="img-responsive img-square" alt="" width="80%" style="padding-left:20%">
-        <p>Technology to facilitate rapid and efficient communication between carers, patients, their relatives and doctors.</p>
-        <p><br><a class="btn-primary" href="<%= url_for :controller => 'landings', :action => 'carehome' %>" role="button">Go To Care Homes &raquo;</a></p>
-    </div>
-    <div class="col-sm-3">
-        <h2>Lactaction Consults</h2>
-        <img src="<%= image_path('motherbaby.png') %>" class="img-responsive img-square" alt="" width="80%" style="padding-left:20%">
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        <p><br><a class="btn-primary" href="<%= url_for :controller => 'landings', :action => 'motherbaby' %>" role="button">Go To Mother & Baby &raquo;</a></p>
-    </div>
-    <div class="col-sm-3">
-        <h2>Primary Care Consults</h2>
-        <img src="<%= image_path('doctor.png') %>" class="img-responsive img-square" alt="" width="80%" style="padding-left:20%">
-        <p>The fastest and easiest way to get care from some of the country’s top physicians. Care from the comfort of your own home.</p>
-        <p><br><a class="btn-primary" href="<%= url_for :controller => 'landings', :action => 'doctordirectory' %>" role="button">Go To My Doctor &raquo;</a></p>
-    </div>
-    <div class="col-sm-3">
-        <h2>Psycology Consults</h2>
-        <img src="<%= image_path('psycology.png') %>" class="img-responsive img-square" alt="" width="80%" style="padding-left:20%">
-        <p>Stress. Relationships. Depression. Tackle your emotional issues – from your own couch.</p>
-        <p><br><a class="btn-primary" href="#" role="button">Go To My Mind &raquo;</a></p>
-    </div>
-</div>
-</section>
-
 <section class="container services">
 <div class="row">
     <div class="col-lg-12 text-center">
         <div class="navy-line" style="margin-top:0;"></div>
-        <h1>We bring quality, convenient, and affordable healthcare<br/>to private & NHS patients<span class="navy"> through online telemedicine solutions. </span> </h1>
-        <p>Human Health has developed offerings for care homes, NHS practices, patients themselves, and more.</p>
+        <h1>Human Health offers consultations with <span class="navy">Lactation experts.</span><br>Please check back for more information soon.</h1>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-3 text-center wow fadeInLeft">
-        <div>
-            <i class="fa fa-gbp features-icon"></i>
-            <h2>Lower Costs</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-        </div>
-        <div class="m-t-lg">
-            <i class="fa fa-hospital-o features-icon"></i>
-            <h2>Optimize Ops</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-        </div>
+    <div class="col-md-4 text-left wow fadeInLeft">
+<!--         <h1 style="font-size:22px"><br>Human Health transforms the system of care around residential homes; <span class="navy">quicker</span>, more <span class="navy">convenient</span> access, better involvement of relatives, and a <span class="navy">revolution in the speed of referral</span> for specialist care.</h1>
+ -->    </div>
+    <div class="col-md-4 text-center  wow zoomIn">
+        <img src="<%= image_path('motherbaby.png') %>" class="img-responsive img-square" alt="" width="80%" style="padding-left:20%">
     </div>
-    <div class="col-md-6 text-center  wow zoomIn">
-        <img src="<%= image_path('phone.png') %>" alt="phone" class="img-responsive" style="margin-top:50px">
-    </div>
-    <div class="col-md-3 text-center wow fadeInRight">
-        <div>
-            <i class="fa fa-user-md features-icon"></i>
-            <h2>Improve Care</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-        </div>
-        <div class="m-t-lg">
-            <i class="fa fa-heart features-icon"></i>
-            <h2>Maintain Quality</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-        </div>
-    </div>
+    <div class="col-md-4 text-right wow fadeInRight">
+<!--     <h1 style="font-size:22px"><br>We offer a <span class="navy">huge reduction in avoidable and unkind admissions</span>; A complex system which used to <span class="navy">take weeks</span> and <span class="navy">cost thousand of pounds</span> instead <span class="navy">takes a few hours</span> and <span class="navy">costs a few hundred pounds.</span></h1>
+ -->    </div>
 </div>
 </section>
 
 
 
-<section id="team" class="gray-section team">
+<!-- <section id="team" class="gray-section testimonials">
 <div class="container">
     <div class="row m-b-lg">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1>Our Team</h1>
-            <p>We are a passionate team, excited to create value for you through our Human Health solutions.</p>
+        <div class="col-lg-12 text-center" style="color:white;">
+            <h2>We believe that technology is the first step to building a caring system that allows patients and carers to rapidly access the clinical support they require, at the same time as cutting the distances between doctors and patients. Elegant technology surrounds patients in their daily lives outside of a healthcare setting so we combine technological advances with agile business management and implementation.</h2>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-4 wow fadeInLeft">
-            <div class="team-member">
-                <img src="<%= image_path('alexander.png') %>" class="img-responsive img-circle" alt="" width="50%">
-                <h4><span class="navy">Alexander</span> Finlayson</h4>
-                <p>Oxford GP and Academic Clinical Fellow in Cancer Medicine. Founder @Medicine Africa, @2023 Challenge.</p>
-                <ul class="list-inline social-icon">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://uk.linkedin.com/in/alexanderfinlayson"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="team-member wow zoomIn">
-                <img src="<%= image_path('nihal.png') %>" class="img-responsive img-circle" alt="" width="50%">
-                <h4><span class="navy"> Nihal</span> Sinha</h4>
-                <p>Former NHS doctor and Academic Clinical Fellow in Neurology at Oxford. Former BCG Consultant.</p>
-                <ul class="list-inline social-icon">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/nihalsinha1"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-4 wow fadeInRight">
-            <div class="team-member">
-                <img src="<%= image_path('avatar1.jpg') %>" class="img-responsive img-circle" alt="" width="50%">
-                <h4><span class="navy">Peter</span> Johnson</h4>
-                <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
-                <ul class="list-inline social-icon">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
 </div>
 </section>
 
-<section class="gray-section" style="margin-top: 0; padding-top: 20px">
+<section class="gray-section" style="margin-top: 0; padding-top: 20px; padding-bottom: 80px">
     <div class="container">
         <div class="row">
+            <div class="navy-line"></div>
             <div class="col-lg-12 text-center wow zoomIn">
                 <h1>
-                    Our Partners
+                    Problem We Solve
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <h4>Care homes and A&E admissions often feature in national news headlines, but is this really a big problem?</h4>
             </div>
         </div>
-        <div class="row" style="margin:40px 0px;">
-            <div class="col-sm-5 col-sm-offset-1">
-                <%= image_tag "nhs_logo2.png", width: "100%" %>
+        <div class="row wow fadeInLeft">
+            <div class="col-sm-3">
+                <img src="<%= image_path('emergency.jpg') %>" alt="http://www.propublica.org/images/ngen/gypsy_big_image/emergency_room-630x420.jpg" class="img-responsive" width="80%" style="margin-top:20px; margin-bottom:15px">
             </div>
-            <div class="col-sm-5 col-sm-offset-1">
-                <%= image_tag "oxford_logo.png", width: "60%" %>
+            <div class="col-sm-9">
+                <h2>Huge Number of Elderly Emergency Admissions</h2>
+                <p style="font-size:15px">The scale of this problem is difficult to comprehend. Emergency admissions from care homes cost the NHS a staggering <span class="navy">£1.25Bn/year and 25%</span> are estimated to be <span class="navy">avoidable</span>. Individuals in care homes often have complex care needs and the pathway to better care needs to tackle these complex issues while being simple for patients and clinical staff.</p>
             </div>
+        </div>
+        <div class="row wow fadeInRight">
+            <div class="col-sm-9">
+                <h2>Existing Solutions Are Costly</h2>
+                <p style="font-size:15px">It seems intuitive that older patients account for a high proportion of emergency admissions (~40% are for the over 65s and ~10% for the over 85s); however, there are ways to reduce these admissions. One straightforward way to reduce admissions is to <span class="navy">increase funding</span> and staff to manage and deliver clinical services. Unfortunately, the healthcare budget is already strained. <span class="navy">Cutting care</span> is an unattractive alternative. Perhaps the greatest hope comes from <span class="navy">transformation</span>, delivering better care for the same or reduced funding.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="<%= image_path('emergency_sign.jpg') %>" alt="http://graphics8.nytimes.com/images/2014/03/12/health/12well_chen/12well_chen-tmagArticle.jpg" width="80%" style="margin-top:30px">
+            </div>
+        </div>
+        </div>
     </div>
 </section>
 
-<section class="comments navy-section" style="margin-top: 0">
+<section class="navy-section solution">
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1>What our patients & partners say</h1>
-            <p>We serve patients through online consultations, help doctors grow their practices, and allow care homes to better serve their residents.</p>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="white-line" style="margin-top:0;"></div>
+        <h1><strong>A Human Solution<strong></h1>
+        <h2 style="text-transform:none">Human Health is the UK’s first bespoke technology platform to facilitate <strong>rapid</strong> and <strong>efficient communication</strong> between carers, patients, their relatives and doctors (including GPs, geriatricians and palliative care specialists) and offers an attractive alternative to phoning a GP surgery or phoning 999.</h2>
+        <h3>HumanHealth uses technology to quickly bring local GP care and specialist care face-to-face with patients and relatives.</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 text-center wow fadeInDown">
+        <div class="m-t-lg">
+            <i class="fa fa-user-md features-icon" style="color:#fff"></i>
+            <h3>GPs gain rapid support from specialist services. Care home staff gain clinical guidance and support from GPs.</h3>
+        </div>
+        <div style="padding-top:15px">
+            <i class="fa fa-hospital-o features-icon" style="color:#fff"></i>
+            <h3>Hospital Specialists become more strategic in the prevention of disease.</h3>
         </div>
     </div>
-    <div class="row features-block wow fadeInUp">
-        <div class="col-lg-4">
-            <div class="bubble" style="color: black;">
-                "I've been able to increase my register by almost 25% using HumanHealth and I can reach more patients, more quickly..."
-            </div>
-            <div class="comments-avatar">
-                <a href="" class="pull-left">
-                    <img alt="image" src="<%= image_path('avatar3.jpg') %>">
-                </a>
-                <div class="media-body">
-                    <div class="commens-name">
-                        Dr. Jeremy Dexter
-                    </div>
-                    <small class="text-muted">GP at Beumont Street Practice</small>
-                </div>
-            </div>
+    <div class="col-md-4 text-center  wow fadeInDown">
+        <div class="m-t-lg">
+            <i class="fa fa-users features-icon" style="color:#fff"></i>
+            <h3>Concerned relatives can collaborate in care between patients and healthcare professionals, regardless of location.</h3>
         </div>
-
-        <div class="col-lg-4">
-            <div class="bubble" style="color: black;">
-                "We've loved working with Human Health. They're system is fast, simple..."
-            </div>
-            <div class="comments-avatar">
-                <a href="" class="pull-left">
-                    <img alt="image" src="<%= image_path('avatar4.jpg') %>">
-                </a>
-                <div class="media-body">
-                    <div class="commens-name">
-                        Andrew Williams
-                    </div>
-                    <small class="text-muted">Director at Oxford Care Homes</small>
-                </div>
-            </div>
+        <div style="padding-top:15px">
+            <i class="fa fa-gbp features-icon" style="color:#fff"></i>
+            <h3>Hospitals have fewer expensive and avoidable admissions.</h3>
         </div>
-
-        <div class="col-lg-4">
-            <div class="bubble" style="color: black;">
-                "I loved how I didn't have to miss work to see my doctor..."
-            </div>
-            <div class="comments-avatar">
-                <a href="" class="pull-left">
-                    <img alt="image" src="<%= image_path('avatar2.jpg') %>">
-                </a>
-                <div class="media-body">
-                    <div class="commens-name">
-                        Micha Woods
-                    </div>
-                    <small class="text-muted">Business Consultant from London</small>
-                </div>
-            </div>
+    </div>
+    <div class="col-md-4 text-center wow fadeInDown">
+        <div class="m-t-lg">
+            <i class="fa fa-home features-icon" style="color:#fff"></i>
+            <h3>Patients gain high quality convenient care in the comfort of their care home, rather than in hospital.</h3>
+        </div>
+        <div style="padding-top:15px">
+            <i class="fa fa-line-chart features-icon" style="color:#fff"></i>
+            <h3>The NHS/CCGs benefit from huge cost savings.</h3>
         </div>
     </div>
 </div>
+</div>
+</section> -->
 
-</section>
-
-<section id="contact" class="gray-section contact" style="margin-top:0;">
+<section id="pricing" class="pricing">
 <div class="container">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1>Contact Us</h1>
-            <p>We'd love to tell you more about Human Health and answer any of your questions.</p>
-        </div>
-    </div>
-    <div class="row m-b-lg">
-        <div class="col-lg-3 col-lg-offset-3">
-            <address>
-                <strong><span class="navy">Human Health</span></strong><br/>
-                43 Woodstock Rd<br/>
-                Oxford, UK OX2 6HG<br/>
-                <abbr title="Phone">P:</abbr> (747) 829-5822
-            </address>
-        </div>
-        <div class="col-lg-4">
-            <p class="text-color">
-                Human Health is a UK-incorporated limited liability company based in Oxford. We are passionate about improving care and reducing costs in the UK healthcare system. We believe technology is one of the key answers.
-            </p>
+            <h1>In the meantime, we want to help.</h1>
+            <p>We'd love to tell more about Human Health and follow the links below to contact us.</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <a href="mailto:info@humnhealth.com" class="btn btn-primary">Send Us an Email</a>
-            <p class="m-t-sm">
-                Or follow us on social media.
-            </p>
-            <ul class="list-inline social-icon">
-                <li><a href="#"><i class="fa fa-twitter"></i></a>
+        <div class="col-lg-4 col-lg-offset-2 wow zoomIn">
+            <ul class="pricing-plan list-unstyled">
+                <li class="pricing-title">
+                    I'm a Mother...
                 </li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                <li class="pricing-desc">
+                    Are you a mother who wants quick, convenient, and quality support from a lactation expert in the comfort of your own home?
                 </li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                <li>
+                    <a class="btn btn-primary btn-xs" href="<%= url_for new_contact_path(:anchor => "a-mother") %>">Click Here</a>
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-            <p><strong>&copy; 2015 Human Health</strong><br/>Optimizing Human Kind</p>
+
+        <div class="col-lg-4 wow zoomIn">
+            <ul class="pricing-plan list-unstyled">
+                <li class="pricing-title">
+                    I'm a Lactation Consultant...
+                </li>
+                <li class="pricing-desc">
+                    Are you a lactation consultant that wants to reach more mothers in need of your support in a convenient and flexible way?
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-xs" href="<%= url_for new_contact_path(:anchor => "a-lac-consultant") %>">Click Here</a>
+                </li>
+            </ul>
         </div>
+
     </div>
 </div>
+
 </section>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top:80px">
+            <p><strong>Human Health &copy; 2015</strong><br/>Optimising Human <strong>Kind</strong></p>
+        </div>
+    </div>
+
+
 <% content_for :javascript do %>
 
 <script type="text/javascript">
