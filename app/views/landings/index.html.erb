@@ -41,6 +41,17 @@
     </div>
 </div>
 
+<div class="modal inmodal text-center" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-body" style="max-height: 350px; overflow-y: auto;">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h1 class="modal-title">Thank You for reaching out!<br>We'll get back to you shortly.</h1>
+                <h2>If you have any further questions,<br>please contact chris@humnhealth.com.</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="container services">
 <div class="row">
@@ -293,6 +304,12 @@
 
 
 $(document).ready(function () {
+    var anchor_value;
+    var stripped_url = document.location.toString().split("#");
+    if (stripped_url.length > 1)
+        anchor_value = stripped_url[1];
+    if (anchor_value == "contact-confirm")
+        $("#contactModal").modal('show');
 
     $('body').addClass('landing-page');
     $('body').attr('id', 'page-top');
