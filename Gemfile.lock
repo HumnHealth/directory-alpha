@@ -118,6 +118,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    sendgrid-rails (2.0.5)
+      actionmailer (>= 3.0.0)
+      activesupport (>= 2.1.0)
     simple_form (3.2.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -169,6 +172,7 @@ DEPENDENCIES
   rmagick
   sass-rails (~> 4.0.0)
   sdoc
+  sendgrid-rails (~> 2.0)
   simple_form
   thin
   turbolinks

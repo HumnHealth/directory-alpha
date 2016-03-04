@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
   def create
     puts "inside create"
     @contact = Contact.create!(contact_params)
-    ContactMailer.to_admin_email(@contact)
+    ContactMailer.to_admin_email(@contact).deliver
     redirect_to(controller: "landings", action: "index", anchor: "contact-confirm")
     rescue ActiveRecord::RecordInvalid => invalid
         flash[:error_messages] = invalid.record.errors.full_messages
