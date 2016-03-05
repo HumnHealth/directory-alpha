@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
 
   def to_admin_email(contact)
     @contact = contact
-    mail(to: 'chris@humnhealth.com', subject: 'CareHome Contact Form Submission')
+    mail(to: 'melissa.l.mccoy@gmail.com', subject: 'CareHome Contact Form Submission')
   end
 
 end
