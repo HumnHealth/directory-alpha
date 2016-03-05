@@ -41,6 +41,9 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'sendgrid-rails', '~> 2.0'
 
+#For secrets
+gem 'figaro'
+
 # For VideoChat
 gem 'opentok', '~> 2.3'
 

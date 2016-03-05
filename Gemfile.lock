@@ -48,6 +48,8 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     foreman (0.78.0)
@@ -159,6 +161,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.1.2)
   bootstrap-sass (= 3.3.0.0)
   coffee-rails (~> 4.0.0)
+  figaro
   font-awesome-rails (= 4.3.0.0)
   foreman
   jbuilder (~> 1.2)

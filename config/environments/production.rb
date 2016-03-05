@@ -70,8 +70,8 @@ DirectoryAlpha::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'http://humanhealth.io' }
   config.action_mailer.smtp_settings = {
-    :user_name  => "app45031840@heroku.com",
-    :password => "jiy7cgep0220",
+    :user_name => ENV['sendgrind_username'],
+    :password => ENV['sendgrind_password'],
     :domain => 'humanhealth.io',
     :address => 'smtp.sendgrid.net',
     :port => 587,
